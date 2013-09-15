@@ -1,0 +1,25 @@
+{
+  "name": "new-element",
+  "version": "0.0.0",
+  "description": "Create a new DOM element from string",
+  "main": "index.js",
+  "scripts": {
+    "test": "fox"
+  },
+  "devDependencies": {
+    "fox": "*"
+  },
+  "keywords": [
+    "dom"
+  ],
+  "repository": {
+    "url": "git@github.com:azer/new-element.git",
+    "type": "git"
+  },
+  "author": "Azer Koçulu <azer@kodfabrik.com>",
+  "license": "BSD",
+  "dependencies": {
+    "new-format": "0.0.1",
+    "domify": "~1.0.0"
+  }
+}
