@@ -1,6 +1,6 @@
 ## new-element
 
-Create DOM elements from HTML string
+Create DOM elements from HTML.
 
 ```js
 newElement('<input />')
