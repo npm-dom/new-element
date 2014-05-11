@@ -1,17 +1,24 @@
+var test = require('prova');
 var newElement = require("./");
 
-beforeEach(function(){
-  document.body.innerHTML = '';
-});
+test('creates an element', function (t) {
+  reset();
 
-it('creates an element', function(){
   var el = newElement('<input value="whatsup" />');
-  expect(el.tagName).to.equal('INPUT');
-  expect(el.value).to.equal('whatsup');
+  t.equal(el.tagName, 'INPUT');
+  t.equal(el.value, 'whatsup');
+  t.end();
 });
 
-it('supports formatting', function(){
+test('supports formatting', function (t) {
+  reset();
+
   var el = newElement('<input value="{val}" class="{cls}" />', { val: 'foo', cls: 'bar' });
-  expect(el.value).to.equal('foo');
-  expect(el.className).to.equal('bar');
+  t.equal(el.value, 'foo');
+  t.equal(el.className, 'bar');
+  t.end();
 });
+
+function reset () {
+  document.body.innerHTML = '';
+}

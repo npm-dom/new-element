@@ -4,10 +4,10 @@
   "description": "Create a new DOM element from string",
   "main": "index.js",
   "scripts": {
-    "test": "fox"
+    "test": "node test -b"
   },
   "devDependencies": {
-    "fox": "*"
+    "prova": "*"
   },
   "keywords": [
     "dom"
@@ -19,7 +19,7 @@
   "author": "Azer Koçulu <azer@kodfabrik.com>",
   "license": "BSD",
   "dependencies": {
-    "new-format": "0.0.1",
-    "domify": "~1.0.0"
+    "domify": "~1.0.0",
+    "format-text": "0.0.3"
   }
 }
