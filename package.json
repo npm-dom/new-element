@@ -1,6 +1,6 @@
 {
   "name": "new-element",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Create a new DOM element from string",
   "main": "index.js",
   "scripts": {
