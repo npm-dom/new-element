@@ -4,10 +4,12 @@
   "description": "Create a new DOM element from string",
   "main": "index.js",
   "scripts": {
-    "test": "node test -b"
+    "test": "browserify test.js | tape-run"
   },
   "devDependencies": {
-    "prova": "*"
+    "browserify": "13.0.0",
+    "tape": "4.5.1",
+    "tape-run": "2.1.3"
   },
   "keywords": [
     "dom"
@@ -20,6 +22,6 @@
   "license": "BSD",
   "dependencies": {
     "domify": "~1.0.0",
-    "format-text": "0.0.3"
+    "format-text": "azer/format-text"
   }
 }
